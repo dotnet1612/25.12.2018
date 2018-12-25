@@ -10,6 +10,7 @@ namespace _2512
     {
         static void Main(string[] args)
         {
+            /*
             Console.WriteLine("Hello!");
 
             // int short byte double float long double string boolean?
@@ -37,6 +38,42 @@ namespace _2512
             int c = a + b;
             Console.Write("Sum is : ");
             Console.WriteLine(c);
+
+    */
+
+            Console.WriteLine("Enter a number (zugi/ezugi):");
+            int numberZugi = Convert.ToInt32(Console.ReadLine());
+
+            if(numberZugi % 2 == 0)
+            {
+                // here will be done when true zugi
+                Console.WriteLine("Zugi");
+            }
+            else
+            {
+                // here will be done when false ezugi
+                Console.WriteLine("E Zugi");
+            }
+
+            if (numberZugi % 2 == 0 && numberZugi % 5 == 10)
+            {
+                Console.WriteLine("Divide by 10 without reminder!");
+            }
+            else
+            {
+                Console.WriteLine("Does NOT divide by 10 without reminder!");
+            }
+            
+            // number 1 or 2 print small else print big
+            if (numberZugi == 1 || numberZugi == 2)
+            {
+                Console.WriteLine("Small number");
+            }
+            else
+            {
+                Console.WriteLine("Large numnber");
+            }
+
 
             Console.ReadLine();
 
