@@ -10,7 +10,8 @@ namespace _2512
     {
         static void Main(string[] args)
         {
-            /*
+
+            // ================================================== if-else
             Console.WriteLine("Hello!");
 
             // int short byte double float long double string boolean?
@@ -39,7 +40,7 @@ namespace _2512
             Console.Write("Sum is : ");
             Console.WriteLine(c);
 
-    */
+    
 
             Console.WriteLine("Enter a number (zugi/ezugi):");
             int numberZugi = Convert.ToInt32(Console.ReadLine());
@@ -74,6 +75,68 @@ namespace _2512
                 Console.WriteLine("Large numnber");
             }
 
+    
+
+            Console.Write("Enter number for positive/negative: ");
+            int numberPN = Convert.ToInt32(Console.ReadLine());
+
+            if (numberPN > 0)
+            {
+                Console.WriteLine("Positive");
+            }
+            else
+            {
+                Console.WriteLine("Negative number!");
+            }
+
+            Console.WriteLine("Enter 2 numbers. who is bigger?");
+            int num1 = Convert.ToInt32(Console.ReadLine());
+            int num2 = Convert.ToInt32(Console.ReadLine());
+            if (num1 > num2)
+            {
+                Console.WriteLine(num1);
+            }
+            else
+            {
+                Console.WriteLine(num2);
+            }
+
+            Console.WriteLine("Enter a number, for Asarot Ahadot:");
+            int numberForAsAh = Convert.ToInt32(Console.ReadLine());
+
+
+            if (numberForAsAh > 9 && numberForAsAh < 100)
+            {
+                if (numberForAsAh % 10 > numberForAsAh / 10)
+                {
+                    Console.WriteLine("Ahadot is bigger");
+                }
+                else
+                {
+                    Console.WriteLine("Asarot is bigger");
+                }
+            }
+            else
+            {
+                Console.WriteLine("Need two digit number!");
+            }
+
+
+            // ================================================== while
+            int x1 = Convert.ToInt32(Console.ReadLine());
+            int sum = 0;
+            while (x1 > 0)
+            {
+                // go to here when true
+                sum = sum + x1;
+
+                x1 = Convert.ToInt32(Console.ReadLine());
+
+            } // trampoline
+
+            // jump here when false
+            Console.Write("Sum is ");
+            Console.WriteLine(sum);
 
             Console.ReadLine();
 
